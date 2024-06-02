@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: #024d7e;
+    color: white;
+}
+
+.header-dark {
+    text-align: center;
+    padding: 10px;
+    background-color: #001523;
+    color: white;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+.project {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    border-image-width: auto;
+    image-resolution: auto;
+}
+
+.footer {
+    background-color: #024d7e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+}
+
+.footer-dark {
+    background-color: #001523;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+}
+
+#about-me {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-default {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    border-left: 1px solid black;
+    padding: 0;
+      list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2'><circle r='1' /></svg>");
+}
+  
+li {
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+  
+.years {
+    font-size: 1em;
+    font-weight: bold;
+}

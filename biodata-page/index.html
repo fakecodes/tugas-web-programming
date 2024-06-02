@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Profile: Denny Setiawan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header" id="header-style">
+        <img src="public/images.jpeg">
+        <h1>Denny Setiawan</h1>
+        <p><i>Tech Enthusiast | DevOps | Software Engineer</i></p>
+        <p align="center"><button id="btn-light" >Light color</button> - <button id="btn-chc" >Dark color</button></p>
+    </header>
+    <div class="row">
+        <div class="column">
+            <section id="bio" class="section-default">
+                <h2>About Me</h2>
+                <p id="about-me">&emsp;&emsp;&emsp;With more than 12 years of experience in the IT field, I have the skills and knowledge to design and build various systems needed in companies from the development stage to the development lifecycle to the application server. Always exploring the latest technology and also having a high sense of concern for the systems that have been built through observability tools helps me in building high quality and reliable systems. My skills allow me to help developers in terms of increasing productivity.
+                </p>
+            </section>
+            <section id="work-experience" class="section-default">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                      <div class="years">2019 - Now</div>
+                      <div class="company">Software Engineer Lead (DevOps) at Tokopedia</div>
+                    </li>
+                    <li>
+                      <div class="years">2016 - 2019</div>
+                      <div class="company">DevOps Engineer at Qerja</div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="column">
+            <section id="work" class="section-default">
+                <h2>Skills</h2>
+                <center>
+                    <div class="project" id="project1"><img src="public/linux.png" alt="linux" width="100" height="100"></div>
+                    <div class="project" id="project2"><img src="public/jenkins.png" alt="jenkins" width="100" height="100"></div>
+                    <div class="project" id="project3"><img src="public/ansible.png" alt="ansible" width="100" height="100"></div>
+                    <div class="project" id="project4"><img src="public/terraform.png" alt="terraform" width="100" height="100"></div>
+                    <div class="project" id="project5"><img src="public/docker.png" alt="docker" width="100" height="100"></div>
+                    <div class="project" id="project6"><img src="public/helm.png" alt="helm" width="100" height="100"></div>
+                    <div class="project" id="project7"><img src="public/kubernetes.png" alt="kubernetes" width="100" height="100"></div>
+                    <div class="project" id="project8"><img src="public/python.png" alt="python" width="100" height="100"></div>
+                    <div class="project" id="project9"><img src="public/go.png" alt="golang" width="100" height="100"></div>
+                    <div class="project" id="project10"><img src="public/react.png" alt="react" width="100" height="100"></div>
+                </center>
+            </section>
+        </div>
+    </div>
+    <footer class="footer" id="footer-style">
+        <br><p>Contact me via email: </p>
+        <p><a href="mailto:denny.setiawan004@binus.ac.id"><i>denny.setiawan004@binus.ac.id</i></a></p>
+    </footer>
+</body>
+<script type='text/javascript'>
+    var btn_light = document.querySelector('#btn-light');
+    var btn = document.querySelector('#btn-chc');
+    btn_light.addEventListener('click', refreshPage);
+    function refreshPage() {
+        location.reload(true);
+    }
+    btn.addEventListener('click', changeHeaderClass);
+    btn.addEventListener('click', changeFooterClass);
+    function changeHeaderClass() {
+        console.log("Test call method");
+        var element = document.querySelector("#header-style");
+        element.classList.replace("header", "header-dark");
+    }
+    function changeFooterClass() {
+        console.log("Test call method");
+        var element = document.querySelector("#footer-style");
+        element.classList.replace("footer", "footer-dark");
+    }
+</script>
+</html>
